@@ -70,7 +70,7 @@ presentation, it can be integrated into a gulpfile.
 For this part, bespoke-pdf *must* be installed via
 npm.
 
-```
+```js
 var pkg = require('./package.json'),
   pdf = require('bespoke-pdf'),
   rimraf = require('gulp-rimraf');
