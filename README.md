@@ -12,9 +12,9 @@ PDF Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
 ## Todo
 
-1) include a slide skipping mechanism
-2) add a `generating-pdf` class to html element, to allow for custom stylings for PDF purposes (similar to `@media(print)`)
-3) what if hidden slides we're automatically skipped? that would cover 1 with 2
+1. include a slide skipping mechanism
+2. add a `generating-pdf` class to html element, to allow for custom stylings for PDF purposes (similar to `@media(print)`)
+3. what if hidden slides we're automatically skipped? that would cover 1 with 2
 
 ## Bespoke Plugin
 
