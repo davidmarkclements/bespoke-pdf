@@ -1,0 +1,11 @@
+3a4
+>   "dependencies": {},
+11d11
+<     "bespoke-pdf": "davidmarkclements/bespoke-pdf",
+32d31
+<     "run-sequence": "^1.0.2",
+38c37
+< }
+---
+> }
+\ No newline at end of file

@@ -1,0 +1,11 @@
+{
+  "name": "bespoke-pdf",
+  "version": "1.0.2",
+  "main": "./dist/bespoke-pdf.js",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "bespoke.js": "^1.0.0"
+  }
+}

@@ -1,0 +1,34 @@
+18,19d17
+<   pdf = require('bespoke-pdf'),
+<   sequence = require('run-sequence'),
+62,66d59
+< gulp.task('pdf', ['connect'], function () { 
+<   return pdf(pkg.name + '.pdf')
+<     .pipe(gulp.dest('dist'));
+< });
+< 
+92,97c85
+< gulp.task('clean:pdf', function() {
+<   return gulp.src('dist/' + pkg.name + '.pdf')
+<     .pipe(rimraf());
+< });
+< 
+< gulp.task('connect', ['build'], function() {
+---
+> gulp.task('connect', ['build'], function(done) {
+102d89
+< });
+104d90
+< gulp.task('open', function (done) {
+106c92
+< })
+---
+> });
+123,126c109,110
+< gulp.task('serve', function () {
+<   sequence('connect', 'open', 'watch');
+< })
+< gulp.task('default', ['build', 'pdf']);
+---
+> gulp.task('serve', ['connect', 'watch']);
+> gulp.task('default', ['build']);
