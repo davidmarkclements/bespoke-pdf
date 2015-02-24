@@ -1,6 +1,6 @@
 # bespoke-pdf
 
-PDF Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
+PDF generating for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
 ## Notes
 
