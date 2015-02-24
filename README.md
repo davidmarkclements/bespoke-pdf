@@ -1,5 +1,7 @@
 # bespoke-pdf
 
+[![Join the chat at https://gitter.im/davidmarkclements/bespoke-pdf](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/davidmarkclements/bespoke-pdf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 PDF generating for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
 ## Notes
