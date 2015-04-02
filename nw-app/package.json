@@ -4,7 +4,7 @@
   "main": "index.html",
   "window": {
     "show": false,
-    "show_in_taskbar": true
+    "show_in_taskbar": false
   },
   "dependencies": {
     "buffer-compare": "^0.0.1",
