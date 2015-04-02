@@ -10,7 +10,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "postinstall": "cd nw-app && npm i"
   },
   "repository": {
     "type": "git",
@@ -47,7 +48,12 @@
   },
   "license": "MIT",
   "keywords": [
-    "bespoke-plugin"
+    "bespoke-plugin",
+    "bespoke",
+    "PDF",
+    "slides",
+    "presentation",
+    "markdown"
   ],
   "dependencies": {
     "bespoke-to-pdf": "^4.1.1",
