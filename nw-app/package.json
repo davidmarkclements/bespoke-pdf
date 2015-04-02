@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "main": "index.html",
   "window": {
-    "show": true,
+    "show": false,
     "show_in_taskbar": true
   },
   "dependencies": {
-    "extend": "^2.0.0",
-    "buffer-compare": "^0.0.1"
+    "buffer-compare": "^0.0.1",
+    "co": "^4.5.1",
+    "extend": "^2.0.0"
   }
 }

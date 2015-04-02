@@ -9,20 +9,20 @@ var bespoke = require('bespoke'),
   hash = require('bespoke-hash'),
   progress = require('bespoke-progress'),
   forms = require('bespoke-forms'),
-  pdf = require('../../../lib/bespoke-pdf');
+  pdf = require('../../..');
 
 // Bespoke.js
 bespoke.from('article', [
-  pdf(),
   cube(),
   keys(),
   touch(),
-  // bullets('li, .bullet'),
+  bullets('li, .bullet'),
   backdrop(),
   scale(),
   hash(),
   progress(),
-  forms()
+  forms(),
+  pdf()
 ]);
 
 // Prism syntax highlighting

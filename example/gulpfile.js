@@ -15,7 +15,7 @@ var pkg = require('./package.json'),
   opn = require('opn'),
   ghpages = require('gh-pages'),
   path = require('path'),
-  pdf = require('bespoke-pdf'),
+  pdf = require('../'),
   sequence = require('run-sequence'),
   isDist = process.argv.indexOf('serve') === -1;
 
@@ -61,7 +61,7 @@ gulp.task('images', ['clean:images'], function() {
 
 gulp.task('pdf', ['connect'], function () { 
   return pdf(pkg.name + '.pdf')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('clean', function() {
@@ -115,6 +115,10 @@ gulp.task('watch', function() {
   ], ['js']);
 });
 
+gulp.task('exit', function () {
+  process.exit();
+})
+
 gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
@@ -123,4 +127,6 @@ gulp.task('build', ['js', 'html', 'css', 'images']);
 gulp.task('serve', function () {
   sequence('connect', 'open', 'watch');
 })
-gulp.task('default', ['build', 'pdf']);
+gulp.task('default', function () {
+  sequence('build', 'pdf', 'exit');
+});
