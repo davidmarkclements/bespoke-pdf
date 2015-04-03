@@ -26,27 +26,27 @@
     "function-bind": "^0.1.0",
     "gulp": "^3.5.1",
     "gulp-clean": "^0.2.4",
+    "gulp-mocha": "^2.0.1",
     "gulp-coveralls": "^0.1.0",
     "gulp-header": "^1.0.2",
     "gulp-jshint": "^1.3.4",
-    "gulp-karma": "0.0.2",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.0",
     "istanbul": "^0.2.11",
     "jshint-stylish": "^0.1.5",
-    "karma": "^0.10.9",
-    "karma-browserify": "^0.2.1",
-    "karma-coverage": "^0.1.5",
-    "karma-jasmine": "^0.1.5",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "karma-script-launcher": "^0.1.0",
     "lodash": "^2.4.1",
     "requirejs": "^2.1.10",
     "vinyl-buffer": "0.0.0",
     "vinyl-map": "^1.0.1",
-    "vinyl-source-stream": "^0.1.1"
+    "bespoke-to-pdf": "^4.1.1",
+    "vinyl-source-stream": "^1.0.0"
   },
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
   "keywords": [
     "bespoke-plugin",
     "bespoke",
@@ -54,10 +54,5 @@
     "slides",
     "presentation",
     "markdown"
-  ],
-  "dependencies": {
-    "bespoke-to-pdf": "^4.1.1",
-    "gulp-exit": "0.0.2",
-    "vinyl-source-stream": "^1.0.0"
-  }
+  ]
 }

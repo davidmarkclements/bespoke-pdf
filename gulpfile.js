@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   jshint = require('gulp-jshint'),
   map = require('vinyl-map'),
   istanbul = require('istanbul'),
-  karma = require('gulp-karma'),
+  mocha = require('gulp-mocha'),
   coveralls = require('gulp-coveralls'),
   header = require('gulp-header'),
   rename = require('gulp-rename'),
@@ -20,7 +20,7 @@ gulp.task('dev', ['compile', 'lint', 'test', 'watch']);
 
 gulp.task('watch', function() {
   gulp.watch('lib/**/*.js', ['test', 'lint', 'compile']);
-  gulp.watch('test/spec/**/*.js', ['test']);
+  gulp.watch('test/**/*.js', ['test']);
 });
 
 gulp.task('clean', function() {
@@ -29,7 +29,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src(['gulpfile.js', 'lib/**/*.js', 'specs/**/*.js'])
+  return gulp.src(['gulpfile.js', 'lib/**/*.js', 'test/**/*.js'])
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -45,8 +45,8 @@ gulp.task('instrument', function() {
 });
 
 gulp.task('test', ['clean', 'instrument'], function() {
-  return gulp.src(['test/spec/*Spec.js'])
-    .pipe(karma({ configFile: 'karma.conf.js' }));
+  return gulp.src(['test/**/*.js'])
+    .pipe(mocha({ ui: 'qunit', reporter: 'nyan' }));
 });
 
 gulp.task('coveralls', ['test'], function() {
