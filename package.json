@@ -10,8 +10,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "gulp",
-    "postinstall": "cd nw-app && npm i"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
@@ -23,22 +22,28 @@
   "devDependencies": {
     "bespoke": "^1.0.0",
     "browserify": "^4.1.5",
+    "file-compare": "0.0.2",
     "function-bind": "^0.1.0",
     "gulp": "^3.5.1",
     "gulp-clean": "^0.2.4",
-    "gulp-mocha": "^2.0.1",
     "gulp-coveralls": "^0.1.0",
     "gulp-header": "^1.0.2",
     "gulp-jshint": "^1.3.4",
+    "gulp-mocha": "^2.0.1",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.0",
     "istanbul": "^0.2.11",
     "jshint-stylish": "^0.1.5",
     "lodash": "^2.4.1",
     "requirejs": "^2.1.10",
+    "shelljs": "^0.4.0",
     "vinyl-buffer": "0.0.0",
-    "vinyl-map": "^1.0.1",
+    "vinyl-map": "^1.0.1"
+  },
+  "dependencies": {
+    "bespoke-pdf-nw-app": "^0.0.1",
     "bespoke-to-pdf": "^4.1.1",
+    "buffer-equals-polyfill": "^1.0.0",
     "vinyl-source-stream": "^1.0.0"
   },
   "licenses": [

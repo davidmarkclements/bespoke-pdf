@@ -1,2 +1,4 @@
 example
-test
+test/*
+lib-instrumented
+dist
