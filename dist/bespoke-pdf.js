@@ -1,5 +1,5 @@
 /*!
- * bespoke-pdf v1.0.3
+ * bespoke-pdf v1.0.4
  *
  * Copyright 2015, 
  * This content is released under the MIT license

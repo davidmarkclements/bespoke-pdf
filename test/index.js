@@ -8,7 +8,7 @@ process.stdout.write('\n  Note: Tests can take a while...');
 
 test('generates PDF from bespoke slide deck', function (done) {
   this.timeout(1e7);
-  exec('cd test/fixtures/normative/slides && npm i && gulp', function () {
+  exec('PATH=PATH:node_modules/.bin cd test/fixtures/normative/slides && npm i && bower install && gulp', function () {
     var fixture = fs.readFileSync('test/fixtures/normative/presentation-hello-world.pdf');
     var generated = fs.readFileSync('test/fixtures/normative/slides/dist/presentation-hello-world.pdf');
 
@@ -25,7 +25,7 @@ test('generates PDF from bespoke slide deck', function (done) {
 
 test('allows hiding of slides with CSS rules', function (done) {
   this.timeout(1e7);
-  exec('cd test/fixtures/hide-slide-via-css/slides && npm i && gulp', function () { 
+  exec('PATH=PATH:node_modules/.bin cd test/fixtures/hide-slide-via-css/slides && npm i && bower install && gulp', function () { 
     var fixture = fs.readFileSync('test/fixtures/hide-slide-via-css/presentation-hello-world.pdf');
     var generated = fs.readFileSync('test/fixtures/hide-slide-via-css/slides/dist/presentation-hello-world.pdf');
 
