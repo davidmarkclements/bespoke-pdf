@@ -29,6 +29,28 @@ bespoke.from('article', [
 ]);
 ```
 
+#### Options
+
+##### setup [Function]
+
+```
+bespoke.from('article', [
+  pdf({
+    setup: function () {  
+      //prime slide environment for pdf output
+      //for instance, disable the "camera" slide or whatever
+    }
+  })
+]);
+```
+
+##### delay [Number]
+Delay before slide taking begins
+
+##### evalDelay [Number]
+Delay between each shot
+
+
 When using browser globals:
 
 ```js
