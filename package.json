@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "bespoke-pdf-nw-app": "^0.0.1",
-    "bespoke-to-pdf": "^4.1.1",
+    "bespoke-to-pdf": "^4.1.3",
     "bower": "^1.4.1",
     "buffer-equals-polyfill": "^1.0.0",
     "vinyl-source-stream": "^1.0.0"
