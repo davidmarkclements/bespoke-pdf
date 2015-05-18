@@ -1,7 +1,7 @@
 {
   "name": "bespoke-pdf",
   "title": "bespoke-pdf",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "PDF plugin for Bespoke.js",
   "author": "David Clements",
   "browser": "./lib/bespoke-pdf.js",
